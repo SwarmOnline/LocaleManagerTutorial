@@ -69,11 +69,29 @@ Ext.application({
 		    }
 	    });
 
+    var selectField = Ext.create('Ext.field.Select', {
+	    locales: {
+		    label: 'SelectField1.label'
+	    },
+	    valueField: 'value',
+	    displayField: 'name',
+	    options: [{
+		    name: 'Blue',
+		    value: 'Blue'
+	    }, {
+		    name: 'Red',
+		    value: 'Red'
+	    }, {
+		    name: 'Green',
+		    value: 'Green'
+	    }]
+    });
+
 	    // wrap in container so it doesn't get stretched
-	    Ext.Viewport.add({
-		    xtype: 'container',
-		    items: [field]
-	    });
+    Ext.Viewport.add({
+	    xtype: 'container',
+	    items: [field, selectField]
+    });
     },
 
     onUpdated: function() {

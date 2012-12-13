@@ -2,5 +2,9 @@
     "Field1": {
         "label" : "ENGLISH label",
         "placeHolder"  : "ENGLISH placeHolder"
+    },
+
+    "SelectField1": {
+        "label" : "Colour:"
     }
 }
