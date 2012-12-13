@@ -63,8 +63,10 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
 	    var field = Ext.create('Ext.field.Text', {
-		    label: 'ENGLISH Label',
-		    placeHolder: 'English placeHolder'
+		    locales: {
+			    label: 'Field1.label',
+		        placeHolder: 'Field1.placeHolder'
+		    }
 	    });
 
 	    // wrap in container so it doesn't get stretched
