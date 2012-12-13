@@ -1,1 +1,6 @@
-{}
+{
+    "Field1": {
+        "label" : "ENGLISH label",
+        "placeHolder"  : "ENGLISH placeHolder"
+    }
+}
