@@ -1,15 +1,30 @@
 //<debug>
 Ext.Loader.setPath({
     'Ext': 'touch/src',
-    'LocaleManagerTutorial': 'app'
+    'LocaleManagerTutorial': 'app',
+	'Ux': 'touch/src/ux/Ux'
 });
 //</debug>
+
+
 
 Ext.application({
     name: 'LocaleManagerTutorial',
 
     requires: [
-        'Ext.MessageBox'
+        'Ext.MessageBox',
+
+	    'Ux.locale.Manager',
+	    'Ux.locale.override.st.Component',
+	    'Ux.locale.override.st.Button',
+	    'Ux.locale.override.st.Container',
+	    'Ux.locale.override.st.TitleBar',
+	    'Ux.locale.override.st.field.Field',
+	    'Ux.locale.override.st.field.DatePicker',
+	    'Ux.locale.override.st.form.FieldSet',
+	    'Ux.locale.override.st.picker.Picker',
+	    'Ux.locale.override.st.picker.Date'
+
     ],
 
     views: ['Main'],
