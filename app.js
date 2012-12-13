@@ -61,6 +61,17 @@ Ext.application({
 
 	    // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
+
+	    var field = Ext.create('Ext.field.Text', {
+		    label: 'ENGLISH Label',
+		    placeHolder: 'English placeHolder'
+	    });
+
+	    // wrap in container so it doesn't get stretched
+	    Ext.Viewport.add({
+		    xtype: 'container',
+		    items: [field]
+	    });
     },
 
     onUpdated: function() {
