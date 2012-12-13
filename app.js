@@ -25,6 +25,7 @@ Ext.application({
 	    'Ux.locale.override.st.picker.Picker',
 	    'Ux.locale.override.st.picker.Date',
 	    'Ux.locale.override.st.field.Select',
+	    'Ux.locale.override.st.DataView',
 
 	    'LocaleManagerTutorial.view.MyDataView'
 
@@ -82,12 +83,12 @@ Ext.application({
 	    });
 
 	    // wrap in container so it doesn't get stretched
-    Ext.Viewport.add({
-	    xtype: 'container',
-	    items: [field, selectField, {
-		    xtype: 'mydataview'
-	    }]
-    });
+	    Ext.Viewport.add({
+		    xtype: 'container',
+		    items: [field, selectField, {
+			    xtype: 'mydataview'
+		    }]
+	    });
     },
 
     onUpdated: function() {
