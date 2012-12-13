@@ -1,6 +1,20 @@
-{
-    "Field1": {
-        "label" : "label Français",
-        "placeHolder"  : "espace réservé Française"
+    {
+        "Field1": {
+            "label" : "label Français",
+            "placeHolder"  : "espace réservé Française"
+        },
+
+        "SelectField1": {
+            "label" : "Coleur:",
+            "options": [{
+                "name": "Blue",
+                "value": "Blue"
+            }, {
+                "name": "Rouge",
+                "value": "Rouge"
+            }, {
+                "name": "Vert",
+                "value": "Vert"
+            }]
+        }
     }
-}

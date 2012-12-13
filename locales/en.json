@@ -1,10 +1,20 @@
-{
-    "Field1": {
-        "label" : "ENGLISH label",
-        "placeHolder"  : "ENGLISH placeHolder"
-    },
+    {
+        "Field1": {
+            "label" : "ENGLISH label",
+            "placeHolder"  : "ENGLISH placeHolder"
+        },
 
-    "SelectField1": {
-        "label" : "Colour:"
+        "SelectField1": {
+            "label" : "Colour:",
+            "options": [{
+                "name": "Blue",
+                "value": "Blue"
+            }, {
+                "name": "Red",
+                "value": "Red"
+            }, {
+                "name": "Green",
+                "value": "Green"
+            }]
+        }
     }
-}

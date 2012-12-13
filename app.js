@@ -23,7 +23,8 @@ Ext.application({
 	    'Ux.locale.override.st.field.DatePicker',
 	    'Ux.locale.override.st.form.FieldSet',
 	    'Ux.locale.override.st.picker.Picker',
-	    'Ux.locale.override.st.picker.Date'
+	    'Ux.locale.override.st.picker.Date',
+	    'Ux.locale.override.st.field.Select'
 
     ],
 
@@ -69,29 +70,20 @@ Ext.application({
 		    }
 	    });
 
-    var selectField = Ext.create('Ext.field.Select', {
-	    locales: {
-		    label: 'SelectField1.label'
-	    },
-	    valueField: 'value',
-	    displayField: 'name',
-	    options: [{
-		    name: 'Blue',
-		    value: 'Blue'
-	    }, {
-		    name: 'Red',
-		    value: 'Red'
-	    }, {
-		    name: 'Green',
-		    value: 'Green'
-	    }]
-    });
+	    var selectField = Ext.create('Ext.field.Select', {
+		    locales: {
+			    label: 'SelectField1.label',
+			    options: 'SelectField1.options'
+		    },
+		    valueField: 'value',
+		    displayField: 'name'
+	    });
 
 	    // wrap in container so it doesn't get stretched
-    Ext.Viewport.add({
-	    xtype: 'container',
-	    items: [field, selectField]
-    });
+	    Ext.Viewport.add({
+		    xtype: 'container',
+		    items: [field, selectField]
+	    });
     },
 
     onUpdated: function() {
