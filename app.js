@@ -48,7 +48,18 @@ Ext.application({
     },
 
     launch: function() {
-        // Destroy the #appLoadingIndicator element
+	    Ux.locale.Manager.setConfig({
+		    ajaxConfig : {
+			    method : 'GET'
+		    },
+		    language   : 'en',
+		    tpl        : 'locales/{locale}.json',
+		    type       : 'ajax'
+	    });
+
+	    Ux.locale.Manager.init();
+
+	    // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
     },
 
