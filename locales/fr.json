@@ -7,8 +7,8 @@
         "SelectField1": {
             "label" : "Coleur:",
             "options": [{
-                "name": "Blue",
-                "value": "Blue"
+                "name": "Bleu",
+                "value": "Bleu"
             }, {
                 "name": "Rouge",
                 "value": "Rouge"
